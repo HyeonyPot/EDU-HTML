@@ -10,22 +10,76 @@
       
       <h3>접근 제어자(access modifier)란?</h3>
   <p>접근 제어자선언을 통해 데이터의 접근권한에 차별을 두어 데이터를 캡슐화하여 보호할수있다.</p>
-  <h5>public</h5> <p>접근제한이 없다</p>
-  <h5>protected</h5> <p>같은 패키지 내에서와 다른 패키지의 자손 클래스에서 접근 가능</p>
-  <h5>default</h5> <p>같은 패키지내에서만 접근이 가능하다.</p>
-  <h5>private</h5> <p>같은 클래스내에서만 접근이 가능하다.</p>
+  <h5>public</h5><p>접근제한이 없다</p>
+  <h5>protected</h5><p>같은 패키지 내에서와 다른 패키지의 자손 클래스에서 접근 가능</p>
+  <h5>default</h5><p>같은 패키지내에서만 접근이 가능하다.</p>
+  <h5>private</h5><p>같은 클래스내에서만 접근이 가능하다.</p>
   
   
-  <h5>연습문제 8번</h5>
-  <p>       </p>
+  <h3>연습문제 8번</h3>
+  <p>
+import java.util.Scanner;
+public class ex8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int option = scanner.nextInt();
+		scanner.close();
+		switch(option) {
+case 1: System.out.println("옵션1");
+case 2: System.out.println("옵션2");
+case 3: System.out.println("옵션3"); break;
+default: System.out.println("해당없음");
+}
+		
+	}
+
+}
+</p>
+  <h5>option이 1일때</h5>
+  <p>옵션1
+  옵션2
+  옵션3</p>
+  <h5>option이 2일때</h5>
+  <p>옵션2
+  옵션3</p>
+  <h5>option이 3일때</h5>
+  <p>옵션3</p>
+  <h5>option이 4일때</h5>
+  <p>해당없음</p>
   
-  <h5>연습문제 10번</h5>
-  <p>       </p>
   
-  <h5>금화동전 10개가 들어있는 주머니가 10개가 있다. 모든 주머니의 금화가 전부 10g인데, 주머니 한개만 9g짜리 금화가 10개 있다. 어느 주머니에 있는지 저울을 한번만 써서 찾아라. </h5>
+  
+  
+  <h3>연습문제 10번</h3>
+  <p>   
+import java.util.Scanner;
+
+public class ex10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int i = scanner.nextInt();
+		scanner.close();
+		
+		switch(i) {
+case 1: System.out.println("!");break;
+case 2: System.out.println("@");break;
+case 3: System.out.println("#"); break;
+default: System.out.println("*");break;
+}
+	
+	}
+
+}
+    </p>
+  
+  <h3>금화동전 10개가 들어있는 주머니가 10개가 있다. 모든 주머니의 금화가 전부 10g인데, 주머니 한개만 9g짜리 금화가 10개 있다. 어느 주머니에 있는지 저울을 한번만 써서 찾아라. </h3>
   <p>      </p>            
   
-  <h5>77p 실습문제 명령어 실습 후 결과내용</h5>
+  <h3>77p 실습문제 명령어 실습 후 결과내용</h3>
   
       <h5>ls명령어 실습</h5>
           <p> 1위 C      15.33% 
