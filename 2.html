@@ -43,29 +43,246 @@
   <h3>77p 실습문제 명령어 실습 후 결과내용</h3>
   
       <h5>ls명령어 실습</h5>
-          <p> 1위 C      15.33% 
-              2위 JAVA   10.45%       
-              3위 Python 10.31%
-            출처 - Tiobe 
-            </p>
-      
+          <pre><font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls
+<font color="#729FCF"><b>Desktop</b></font>    <font color="#729FCF"><b>Downloads</b></font>         <font color="#729FCF"><b>Music</b></font>     <font color="#729FCF"><b>Public</b></font>     <font color="#729FCF"><b>Videos</b></font>
+<font color="#729FCF"><b>Documents</b></font>  examples.desktop  <font color="#729FCF"><b>Pictures</b></font>  <font color="#729FCF"><b>Templates</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -a
+<font color="#729FCF"><b>.</b></font>             <font color="#729FCF"><b>.cache</b></font>     <font color="#729FCF"><b>Downloads</b></font>         <font color="#729FCF"><b>.local</b></font>    .profile
+<font color="#729FCF"><b>..</b></font>            <font color="#729FCF"><b>.config</b></font>    examples.desktop  <font color="#729FCF"><b>.mozilla</b></font>  <font color="#729FCF"><b>Public</b></font>
+.bash_logout  <font color="#729FCF"><b>Desktop</b></font>    <font color="#729FCF"><b>.gnupg</b></font>            <font color="#729FCF"><b>Music</b></font>     <font color="#729FCF"><b>Templates</b></font>
+.bashrc       <font color="#729FCF"><b>Documents</b></font>  .ICEauthority     <font color="#729FCF"><b>Pictures</b></font>  <font color="#729FCF"><b>Videos</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -l
+total 44
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Desktop</b></font>
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Documents</b></font>
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Downloads</b></font>
+-rw-r--r-- 1 hs hs 8980 Mar 13 00:27 examples.desktop
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Music</b></font>
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Pictures</b></font>
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Public</b></font>
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Templates</b></font>
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:42 <font color="#729FCF"><b>Videos</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$  ls- al
+
+Command &apos;ls-&apos; not found, did you mean:
+
+  command &apos;lsd&apos; from snap lsd (0.16.0)
+  command &apos;lsc&apos; from deb livescript
+  command &apos;lsw&apos; from deb suckless-tools
+  command &apos;lsm&apos; from deb lsm
+  command &apos;ls&apos; from deb coreutils
+  command &apos;lsh&apos; from deb lsh-client
+
+See &apos;snap info &lt;snapname&gt;&apos; for additional versions.
+
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -al
+total 88
+drwxr-xr-x 15 hs   hs   4096 Mar 13 00:43 <font color="#729FCF"><b>.</b></font>
+drwxr-xr-x  3 root root 4096 Mar 13 00:27 <font color="#729FCF"><b>..</b></font>
+-rw-r--r--  1 hs   hs    220 Mar 13 00:27 .bash_logout
+-rw-r--r--  1 hs   hs   3771 Mar 13 00:27 .bashrc
+drwx------ 13 hs   hs   4096 Mar 13 00:44 <font color="#729FCF"><b>.cache</b></font>
+drwx------ 11 hs   hs   4096 Mar 13 00:43 <font color="#729FCF"><b>.config</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Desktop</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Documents</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Downloads</b></font>
+-rw-r--r--  1 hs   hs   8980 Mar 13 00:27 examples.desktop
+drwx------  3 hs   hs   4096 Mar 13 00:41 <font color="#729FCF"><b>.gnupg</b></font>
+-rw-------  1 hs   hs    318 Mar 13 00:41 .ICEauthority
+drwx------  3 hs   hs   4096 Mar 13 00:41 <font color="#729FCF"><b>.local</b></font>
+drwx------  5 hs   hs   4096 Mar 13 00:43 <font color="#729FCF"><b>.mozilla</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Music</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Pictures</b></font>
+-rw-r--r--  1 hs   hs    807 Mar 13 00:27 .profile
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Public</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Templates</b></font>
+drwxr-xr-x  2 hs   hs   4096 Mar 13 00:42 <font color="#729FCF"><b>Videos</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -F
+<font color="#729FCF"><b>Desktop</b></font>/    <font color="#729FCF"><b>Downloads</b></font>/        <font color="#729FCF"><b>Music</b></font>/     <font color="#729FCF"><b>Public</b></font>/     <font color="#729FCF"><b>Videos</b></font>/
+<font color="#729FCF"><b>Documents</b></font>/  examples.desktop  <font color="#729FCF"><b>Pictures</b></font>/  <font color="#729FCF"><b>Templates</b></font>/
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -u
+<font color="#729FCF"><b>Desktop</b></font>    <font color="#729FCF"><b>Documents</b></font>  <font color="#729FCF"><b>Music</b></font>     <font color="#729FCF"><b>Public</b></font>  examples.desktop
+<font color="#729FCF"><b>Templates</b></font>  <font color="#729FCF"><b>Downloads</b></font>  <font color="#729FCF"><b>Pictures</b></font>  <font color="#729FCF"><b>Videos</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls /tmp
+config-err-KbnR2H
+<font color="#729FCF"><b>ssh-1qI2HZShhGZS</b></font>
+<font color="#729FCF"><b>systemd-private-27f5f768f01b4443826db352469f87ad-bolt.service-lAIh6z</b></font>
+<font color="#729FCF"><b>systemd-private-27f5f768f01b4443826db352469f87ad-colord.service-lvfB6j</b></font>
+<font color="#729FCF"><b>systemd-private-27f5f768f01b4443826db352469f87ad-fwupd.service-xEdVcu</b></font>
+<font color="#729FCF"><b>systemd-private-27f5f768f01b4443826db352469f87ad-rtkit-daemon.service-hz7Jpt</b></font>
+<font color="#729FCF"><b>systemd-private-27f5f768f01b4443826db352469f87ad-systemd-resolved.service-psB5Jn</b></font>
+<font color="#729FCF"><b>systemd-private-27f5f768f01b4443826db352469f87ad-systemd-timesyncd.service-Yv6rLV</b></font>
+<font color="#729FCF"><b>Temp-3af187df-e0aa-4fe8-ad59-46a4ed32c961</b></font>
+<font color="#729FCF"><b>Temp-4dc9c117-8c3a-4c81-bb68-42c7a5938f61</b></font>
+<span style="background-color:#4E9A06"><font color="#2E3436">VMwareDnD</font></span>
+<font color="#729FCF"><b>vmware-root_1718-591565075</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls /etc
+<font color="#729FCF"><b>acpi</b></font>                    hosts                <font color="#729FCF"><b>polkit-1</b></font>
+adduser.conf            hosts.allow          popularity-contest.conf
+<font color="#729FCF"><b>alternatives</b></font>            hosts.deny           <font color="#729FCF"><b>ppp</b></font>
+anacrontab              <font color="#729FCF"><b>hp</b></font>                   profile
+apg.conf                <font color="#729FCF"><b>ifplugd</b></font>              <font color="#729FCF"><b>profile.d</b></font>
+<font color="#729FCF"><b>apm</b></font>                     <font color="#729FCF"><b>ImageMagick-6</b></font>        protocols
+<font color="#729FCF"><b>apparmor</b></font>                <font color="#729FCF"><b>init</b></font>                 <font color="#729FCF"><b>pulse</b></font>
+<font color="#729FCF"><b>apparmor.d</b></font>              <font color="#729FCF"><b>init.d</b></font>               <font color="#729FCF"><b>python2.7</b></font>
+<font color="#729FCF"><b>apport</b></font>                  <font color="#729FCF"><b>initramfs-tools</b></font>      <font color="#729FCF"><b>python3</b></font>
+appstream.conf          inputrc              <font color="#729FCF"><b>python3.6</b></font>
+<font color="#729FCF"><b>apt</b></font>                     <font color="#729FCF"><b>insserv.conf.d</b></font>       <font color="#729FCF"><b>rc0.d</b></font>
+<font color="#729FCF"><b>avahi</b></font>                   <font color="#729FCF"><b>iproute2</b></font>             <font color="#729FCF"><b>rc1.d</b></font>
+bash.bashrc             issue                <font color="#729FCF"><b>rc2.d</b></font>
+bash_completion         issue.net            <font color="#729FCF"><b>rc3.d</b></font>
+<font color="#729FCF"><b>bash_completion.d</b></font>       <font color="#729FCF"><b>kernel</b></font>               <font color="#729FCF"><b>rc4.d</b></font>
+bindresvport.blacklist  kernel-img.conf      <font color="#729FCF"><b>rc5.d</b></font>
+<font color="#729FCF"><b>binfmt.d</b></font>                kerneloops.conf      <font color="#729FCF"><b>rc6.d</b></font>
+<font color="#729FCF"><b>bluetooth</b></font>               <font color="#729FCF"><b>ldap</b></font>                 rc.local
+brlapi.key              ld.so.cache          <font color="#729FCF"><b>rcS.d</b></font>
+<font color="#729FCF"><b>brltty</b></font>                  ld.so.conf           <font color="#729FCF"><b>resolvconf</b></font>
+brltty.conf             <font color="#729FCF"><b>ld.so.conf.d</b></font>         <font color="#34E2E2"><b>resolv.conf</b></font>
+<font color="#729FCF"><b>ca-certificates</b></font>         legal                <font color="#8AE234"><b>rmt</b></font>
+ca-certificates.conf    libao.conf           rpc
+<font color="#729FCF"><b>calendar</b></font>                libaudit.conf        rsyslog.conf
+<font color="#729FCF"><b>chatscripts</b></font>             <font color="#729FCF"><b>libblockdev</b></font>          <font color="#729FCF"><b>rsyslog.d</b></font>
+<font color="#729FCF"><b>console-setup</b></font>           <font color="#729FCF"><b>libnl-3</b></font>              <font color="#729FCF"><b>sane.d</b></font>
+<font color="#729FCF"><b>cracklib</b></font>                <font color="#729FCF"><b>libpaper.d</b></font>           securetty
+<font color="#729FCF"><b>cron.d</b></font>                  <font color="#729FCF"><b>libreoffice</b></font>          <font color="#729FCF"><b>security</b></font>
+<font color="#729FCF"><b>cron.daily</b></font>              lintianrc            <font color="#729FCF"><b>selinux</b></font>
+<font color="#729FCF"><b>cron.hourly</b></font>             locale.alias         sensors3.conf
+<font color="#729FCF"><b>cron.monthly</b></font>            locale.gen           <font color="#729FCF"><b>sensors.d</b></font>
+crontab                 <font color="#34E2E2"><b>localtime</b></font>            services
+<font color="#729FCF"><b>cron.weekly</b></font>             <font color="#729FCF"><b>logcheck</b></font>             shadow
+<font color="#729FCF"><b>cups</b></font>                    login.defs           shadow-
+<font color="#729FCF"><b>cupshelpers</b></font>             logrotate.conf       shells
+<font color="#729FCF"><b>dbus-1</b></font>                  <font color="#729FCF"><b>logrotate.d</b></font>          <font color="#729FCF"><b>skel</b></font>
+<font color="#729FCF"><b>dconf</b></font>                   lsb-release          <font color="#729FCF"><b>speech-dispatcher</b></font>
+debconf.conf            ltrace.conf          <font color="#729FCF"><b>ssh</b></font>
+debian_version          machine-id           <font color="#729FCF"><b>ssl</b></font>
+<font color="#729FCF"><b>default</b></font>                 magic                subgid
+deluser.conf            magic.mime           subgid-
+<font color="#729FCF"><b>depmod.d</b></font>                mailcap              subuid
+<font color="#729FCF"><b>dhcp</b></font>                    mailcap.order        subuid-
+<font color="#729FCF"><b>dictionaries-common</b></font>     manpath.config       sudoers
+<font color="#729FCF"><b>dpkg</b></font>                    mime.types           <font color="#729FCF"><b>sudoers.d</b></font>
+drirc                   mke2fs.conf          sysctl.conf
+<font color="#729FCF"><b>emacs</b></font>                   <font color="#729FCF"><b>modprobe.d</b></font>           <font color="#729FCF"><b>sysctl.d</b></font>
+environment             modules              <font color="#729FCF"><b>systemd</b></font>
+<font color="#729FCF"><b>firefox</b></font>                 <font color="#729FCF"><b>modules-load.d</b></font>       <font color="#729FCF"><b>terminfo</b></font>
+<font color="#729FCF"><b>fonts</b></font>                   <font color="#34E2E2"><b>mtab</b></font>                 <font color="#729FCF"><b>thermald</b></font>
+fstab                   mtools.conf          <font color="#729FCF"><b>thunderbird</b></font>
+fuse.conf               nanorc               timezone
+<font color="#729FCF"><b>fwupd</b></font>                   <font color="#729FCF"><b>netplan</b></font>              <font color="#729FCF"><b>tmpfiles.d</b></font>
+gai.conf                <font color="#729FCF"><b>network</b></font>              ucf.conf
+<font color="#729FCF"><b>gdb</b></font>                     <font color="#729FCF"><b>networkd-dispatcher</b></font>  <font color="#729FCF"><b>udev</b></font>
+<font color="#729FCF"><b>gdm3</b></font>                    <font color="#729FCF"><b>NetworkManager</b></font>       <font color="#729FCF"><b>udisks2</b></font>
+<font color="#729FCF"><b>geoclue</b></font>                 networks             <font color="#729FCF"><b>ufw</b></font>
+<font color="#729FCF"><b>ghostscript</b></font>             <font color="#729FCF"><b>newt</b></font>                 updatedb.conf
+<font color="#729FCF"><b>glvnd</b></font>                   nsswitch.conf        <font color="#729FCF"><b>update-manager</b></font>
+<font color="#729FCF"><b>gnome</b></font>                   <font color="#729FCF"><b>opt</b></font>                  <font color="#729FCF"><b>update-motd.d</b></font>
+<font color="#729FCF"><b>groff</b></font>                   <font color="#34E2E2"><b>os-release</b></font>           <font color="#729FCF"><b>update-notifier</b></font>
+group                   <font color="#729FCF"><b>PackageKit</b></font>           <font color="#729FCF"><b>UPower</b></font>
+group-                  pam.conf             usb_modeswitch.conf
+<font color="#729FCF"><b>grub.d</b></font>                  <font color="#729FCF"><b>pam.d</b></font>                <font color="#729FCF"><b>usb_modeswitch.d</b></font>
+gshadow                 papersize            <font color="#729FCF"><b>vim</b></font>
+gshadow-                passwd               <font color="#729FCF"><b>vmware-tools</b></font>
+<font color="#729FCF"><b>gss</b></font>                     passwd-              <font color="#34E2E2"><b>vtrgb</b></font>
+<font color="#729FCF"><b>gtk-2.0</b></font>                 <font color="#729FCF"><b>pcmcia</b></font>               wgetrc
+<font color="#729FCF"><b>gtk-3.0</b></font>                 <font color="#729FCF"><b>perl</b></font>                 <font color="#729FCF"><b>wpa_supplicant</b></font>
+hdparm.conf             <font color="#729FCF"><b>pki</b></font>                  <font color="#729FCF"><b>X11</b></font>
+host.conf               <font color="#729FCF"><b>pm</b></font>                   <font color="#729FCF"><b>xdg</b></font>
+hostname                pnm2ppa.conf         zsh_command_not_found
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls /etc/passwd
+/etc/passwd
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -asl /etc/passwd
+4 -rw-r--r-- 1 root root 2398 Mar 13 00:27 /etc/passwd
+</pre>
+  
       <h5>cp명령어 실습</h5>
-          <p> jsp는 Java Server Pages의 약자로 언어의 종류를 나타내는것이 아니다.그 내용은 서버에서 실행되고 그결과가 클라이언트에서 출력된다.</p>
+          <pre><font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ mkdir unix
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ cd unix
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cp /etc/passwd test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls
+test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cp /etc/passwd
+cp: missing destination file operand after &apos;/etc/passwd&apos;
+Try &apos;cp --help&apos; for more information.
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ mkdir Temp
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cp test.txt Temp
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cp Temp Tmp
+cp: -r not specified; omitting directory &apos;Temp&apos;
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls
+<font color="#729FCF"><b>Temp</b></font>  test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cp -r Temp Tmp
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls Temp
+test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls Tmp
+test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ 
+</pre>
           
       
       <h5>chmod 명령어 실습</h5>
-          <p>  자바코드를 컴파일해서 얻은 바이트 코드를 해당 운영체제가 이해할수있는 기계어로 바꿔 실행시켜준다.
-               1.Class Loader
-               2.Execution Engine
-               3.Garbage Collector
-               4.Runtime Data Area
-              </p>
+         <pre><font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~</b></font>$ cd unix
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls -l
+total 12
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:52 <font color="#729FCF"><b>Temp</b></font>
+-rw-r--r-- 1 hs hs 2398 Mar 13 00:52 test.txt
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:53 <font color="#729FCF"><b>Tmp</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ chmod 644 test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls-l
+ls-l: command not found
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls -l
+total 12
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:52 <font color="#729FCF"><b>Temp</b></font>
+-rw-r--r-- 1 hs hs 2398 Mar 13 00:52 test.txt
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:53 <font color="#729FCF"><b>Tmp</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ chmod 666 test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls -l
+total 12
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:52 <font color="#729FCF"><b>Temp</b></font>
+-rw-rw-rw- 1 hs hs 2398 Mar 13 00:52 test.txt
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:53 <font color="#729FCF"><b>Tmp</b></font>
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ chmod 400 test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls -l
+total 12
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:52 <font color="#729FCF"><b>Temp</b></font>
+-r-------- 1 hs hs 2398 Mar 13 00:52 test.txt
+drwxr-xr-x 2 hs hs 4096 Mar 13 00:53 <font color="#729FCF"><b>Tmp</b></font>
+</pre>
       
       <h5>rm 명령어 실습</h5>
-          <p> 캡슐화란 private 속성 선언으로 필요할 때 외에는 접근하지 못하도록 하여 중요한데이터로의 접근을 차단한다.</p>
+          <pre><font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cd Tmp
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix/Tmp</b></font>$ ls
+test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix/Tmp</b></font>$ rm -i test.txt
+rm: remove regular file &apos;test.txt&apos;? 
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix/Tmp</b></font>$ cd..
+cd..: command not found
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix/Tmp</b></font>$ cd ..
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls Tmp
+test.txt
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ rmdir Tmp
+rmdir: failed to remove &apos;Tmp&apos;: Directory not empty
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ rm -r Tmp
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ ls
+<font color="#729FCF"><b>Temp</b></font>  test.txt
+</pre>
       
   <h5>에디터 실습</h5>
-          <p> 캡슐화란 private 속성 선언으로 필요할 때 외에는 접근하지 못하도록 하여 중요한데이터로의 접근을 차단한다.</p>
+          <pre><font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cat &gt; intro
+this is intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cat intro
+this is intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ cat -n intro
+     1	this is intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ more intro
+this is intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ tail intro
+this is intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ tail -5 intro
+this is intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ tail +5 intro
+<font color="#8AE234"><b>hs@ubuntu</b></font>:<font color="#729FCF"><b>~/unix</b></font>$ tail -f intro
+this is intro
+</pre>
       
 
 
